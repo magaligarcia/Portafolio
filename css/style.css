@@ -1,0 +1,128 @@
+
+body{
+    background-color: #1F2421;
+}
+
+header{
+    background-color: #DCE1DE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+}
+main{
+    width: 100%;
+}
+
+
+.menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    padding: 4px;
+    color: #1F2421;
+    font-family: 'Nixie One', cursive;
+    font-size: 22px;
+}
+
+/*--------------------- PRESENTACION - REDES SOCIALES -------------------------*/
+
+.presentacion{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #DCE1DE;
+    align-items: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.img-circular-perfil{
+    width:250px;
+    height:250px;
+    border-radius:150px;
+    border:10px solid #9CC5A1;
+}
+
+h1{
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Gruppo', cursive;
+    font-size: 24px;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+}
+
+/*--------------------- SOBRE MI -------------------------*/
+.subtitulo{
+    font-family: 'Gruppo', cursive;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+
+.sobre-mi{
+padding: 0% 8% 2%; /*Arriba - izquierda y derecha - bottom*/
+font-family: 'Gruppo', cursive;
+font-size: 24px;
+color: #DCE1DE;
+}
+
+.sobre-mi-info{
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+
+/*--------------------- SKILLS / HOBBIES -------------------------*/
+
+.skills-hobbies{
+    background-color: #9CC5A1;
+    padding: 0% 8%;
+    font-family: 'Gruppo', cursive;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1F2421;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.skills, .hobbies{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.skills-item{
+    
+}
+
+.formacion{
+    color: #DCE1DE;
+
+}
+
+.formal{
+    display: flex;
+    padding: 0% 8%;
+    width: 200px;
+}
+
+.formacion-items{
+    margin: 8px;flex-wrap: wrap;
+}
