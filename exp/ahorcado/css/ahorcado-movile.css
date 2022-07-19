@@ -1,0 +1,228 @@
+@media only screen   
+and (max-width:768px)
+{  
+
+/*-----------------------------------------------------------------------------------------*/
+/*---------------------------------  PANTALLA DE INICIO  ----------------------------------*/
+#home-screen{
+    justify-content: center;
+    align-items: center;
+  }
+
+/*---------------------------------  IMAGEN DE HORCA Y BOTONES  ----------------------------------*/
+.img-rope{ /*----------  IMAGEN DE HORCA  ----------*/
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 300px;
+    animation: rope-slide 5s 1;
+    transform-origin: top center;
+  }
+
+  @keyframes rope-slide { /*----------  ANIMACIÓN DE HORCA  ----------*/
+    0%{
+      margin-top: -130%;
+    }
+    20%{
+      transform: rotate(18deg)
+    }
+    40%{
+      transform: rotate(-15deg)
+    }
+    60%{
+      transform: rotate(10deg)
+    }
+    80%{
+      transform: rotate(-5deg)
+    }
+    100% {
+      margin-bottom: 0%;
+    }
+  }
+
+  h1{  /*--------------------------------- TITULO  ----------------------------------*/
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    font-size: 58px;
+    font-family: 'Bungee Hairline', cursive;
+    font-weight: 600;
+    margin-top: 16%;
+    margin-bottom: 10%;
+    animation-duration: 7s;
+    animation-name: h1-op;
+  }
+  @keyframes h1-op { /*----------  ANIMACIÓN - APARICION DE TITULO  ----------*/
+    0% {
+      opacity: 0%;
+    }
+    50% {
+      opacity: 0%;
+    }
+    80%{
+      opacity: 90%;
+    }
+    100%{
+        opacity: 100%;
+    }
+  }
+
+  /**/
+#div-buttons{  
+    text-align: center;
+    animation-duration: 11s;
+    animation-name: button-op;
+  }
+
+  #div-button-init, #div-button-new-word{  /*----------  BOTON INICIAR JUEGO - BOTON AGREGAR NUEVA PALABRA  ----------*/
+    margin-bottom: 40px;
+  }
+  
+  @keyframes button-op { /*----------  ANIMACIÓN - APARICION DE BOTONES  ----------*/
+    
+    0% {
+      opacity: 0%;
+    }
+    50% {
+      opacity: 0%;
+    }
+    80%{
+      opacity: 90%;
+    }
+    90%{
+      opacity: 96%;
+    }
+    100%{
+        opacity: 100%;
+    }
+  }
+
+  .button-pushable {  /*----------  PROPIEDADES Y ANIMACIÓN DE BOTONES AL DAR CLICK ----------*/
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    transition: filter 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+  
+  .button-edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(
+      to left,
+      hsl(340deg 100% 16%) 0%,
+      hsl(340deg 100% 32%) 8%,
+      hsl(340deg 100% 32%) 92%,
+      hsl(340deg 100% 16%) 100%
+    );
+  }
+  
+  .button-front {
+    display: block;
+    position: relative;
+    padding: 12px 27px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background: hsl(345deg 100% 47%);
+    will-change: transform;
+    transform: translateY(-4px);
+    transition:
+      transform
+      600ms
+      cubic-bezier(.3, .7, .4, 1);
+  }
+  
+  @media (min-width: 768px) {
+    .button-front {
+      font-size: 1.25rem;
+      padding: 12px 42px;
+    }
+  }
+  
+  .button-pushable:hover {
+    filter: brightness(110%);
+    -webkit-filter: brightness(110%);
+  }
+  
+  .button-pushable:hover .button-front {
+    transform: translateY(-6px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  
+  .button-pushable:active .button-front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  
+  .button-pushable:hover .button-shadow {
+    transform: translateY(4px);
+    transition:
+      transform
+      250ms
+      cubic-bezier(.3, .7, .4, 1.5);
+  }
+  
+  .button-pushable:active .button-shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+  
+  .button-pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+}
+
+/* 360 x 518 */
+/*---------------------------------  PANTALLAS PEQUEÑAS  ----------------------------------*/
+@media only screen   
+and (max-width:360px)
+{
+
+/*---------------------------------  IMAGEN DE HORCA Y BOTONES  ----------------------------------*/
+.img-rope{ /*----------  IMAGEN DE HORCA  ----------*/
+    height: 200px;
+  }
+
+  h1{  /*--------------------------------- TITULO  ----------------------------------*/
+    font-size: 50px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  #div-button-init, #div-button-new-word{  /*----------  BOTON INICIAR JUEGO - BOTON AGREGAR NUEVA PALABRA  ----------*/
+    margin-bottom: 20px;
+  }
+  
+  .button-front {
+    font-size: 0.8rem;
+     }
+ }

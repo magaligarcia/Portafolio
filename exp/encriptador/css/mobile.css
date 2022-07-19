@@ -1,0 +1,278 @@
+@media only screen   
+and (min-width: 320px) and (max-width:768px)
+{ 
+    :root{
+        --negro: #000000;
+        --mostaza: #FCA311;
+        --azul: #14213D;
+        --azul-claro: #0f4e61;
+        --gris: #E5E5E5;
+        --gris-medio: #dbdbdb;
+        --gris-oscuro: #211f29;
+        --blanco: #FFFFFF;
+
+        --small-font:14px;
+        --medium-font: 16px;
+        --large-font: 22px;
+        --xlarge-font:32px;
+        --xxlarge-font:40px;
+    }
+
+    body{
+        background: #0b0b10;
+        background-size: cover;
+    }
+
+    header{
+        background: url(https://i.gifer.com/1kc1.gif) center;
+        background-size: cover;
+        height: 50px;
+        box-shadow:  inset 1px 1px 10px 4px #0b0b10;
+    }
+
+    .contenedor-h1{
+        font-size: 28px;
+        color: var(--gris-medio);
+        text-align: center;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Antic Slab', serif;
+        font-weight: 900;
+        text-shadow: 
+        1px 0px 1px var(--negro), 0px 1px 1px var(--azul-claro), 
+        2px 1px 1px var(--negro), 1px 2px 1px var(--azul-claro),
+        3px 2px 1px var(--negro), 2px 3px 1px var(--azul-claro),
+        4px 3px 1px var(--negro), 3px 4px 1px var(--azul-claro),
+        5px 4px 1px var(--negro), 4px 5px 1px var(--azul-claro),
+        6px 5px 1px var(--negro), 5px 6px 1px var(--azul-claro),
+        7px 6px 1px var(--negro);
+    }
+
+    main{
+        width: 88%;
+        margin: auto;
+        padding: 10px 0px;
+    }
+          
+    p {
+        display: inline-block;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        color: var(--gris-medio);
+    }
+
+    .condiciones {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        background-color: #00132A;
+        text-align: center;
+        border-radius: 8px;
+        padding: 8px;
+        align-items: center;
+        box-shadow:  inset 1px 1px 10px 4px #0b0b10;
+    }
+
+    .contenedor-cuadros-texto{
+        text-align: center;
+        height: 500px;
+        margin-top: 6px;
+        background: #00132A;
+        padding-top: 60px;
+        border-radius: 8px;
+        box-shadow:  inset 1px 1px 10px 4px #0b0b10;
+    }
+    
+    .contenedor-derecho {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: inline-block;
+        width: 280px;
+        height: 250px;
+        
+        overflow: hidden;
+    }
+    
+    .contenedor-izquierdo{
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        display: inline-block;
+        width: 280px;
+        height: 250px;
+        
+        overflow: hidden;
+    }
+
+    .contenedor-textareas {
+        justify-content: center;
+        align-items: center;
+        margin: 2px;
+    }
+
+    .cajaTxt {
+        resize: none;
+        background: var(--gris);
+        font-size: var(--small-font);
+        font-family: 'Montserrat', sans-serif;
+        padding: 2px 2px 2px 4px;;
+        width: 250px;
+        height: 170px;
+        position: center;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+
+    .contenedor-botones{
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .botones {
+        background-color: var(--gris);
+        font-family: 'Patrick Hand', cursive;
+        border-radius: 10px;
+        align-items: center;
+        cursor: pointer;
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+        border: none;
+        color: var(--gris-oscuro);
+        box-shadow: 0 9px 14px rgba(0, 0, 0, 0.5);
+        margin-top: 10px;
+    }
+    
+    .botones:active {
+        box-shadow: rgba(0, 0, 0, 0.5);
+        transform: translateY(4px);
+    }
+    
+    .botones:hover {
+        color: var(--gris-oscuro);
+        background-color: var(--mostaza);
+        transform: translateY(1px);
+    }
+    
+    footer{
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        padding: 2px;
+        align-items: center;
+        background: url(https://i.gifer.com/1kc1.gif) center;
+        background-size: cover;
+        height: 50px;
+        box-shadow:  inset 1px 1px 10px 4px #0b0b10;
+    }
+
+    .datos-creador{
+        width: 98%;
+        height: 40px;
+        background: rgba(0,15,32,0.8);
+        margin:4px auto;
+        padding-top: 4px;
+    }
+
+    .datos-creador a{
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .datos-creador p{
+        font-size: 12px;
+    }
+
+    .datos-creador img {
+        width: 12px;
+    }
+
+    .iconoModal{
+        animation: twinkle 0.9s infinite alternate;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        color: var(--gris-medio);
+    }
+
+    @keyframes twinkle {
+        0%{
+            opacity: 0.8;
+        }
+        100%{
+            opacity:0;
+        }
+    }
+
+    .modalDialog {
+        position: fixed;
+        font-family: 'Montserrat', sans-serif;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,0.8);
+        z-index: 99999;
+        opacity:0;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+        pointer-events: none;
+    }
+    .modalDialog:target {
+        opacity:1;
+        pointer-events: auto;
+    }
+    .modalDialog > div {
+        width: 200px;
+        position: relative;
+        margin: 10% auto;
+        padding: 5px 20px 13px 20px;
+        border-radius: 10px;
+        background: #fff;
+        -webkit-transition: opacity 400ms ease-in;
+        -moz-transition: opacity 400ms ease-in;
+        transition: opacity 400ms ease-in;
+    }
+
+    .modalDialog > div h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: var(--large-font);
+        padding-bottom: 5px;
+    }
+
+    .modalDialog > div p{
+        color: var(--azul-claro);
+        font-family: 'Patrick Hand', cursive;
+        font-size: var(--large-font);
+        padding-bottom: 5px;
+    }
+
+    .close {
+        background: var(--mostaza);
+        color: #FFFFFF;
+        line-height: 25px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: -10px;
+        width: 24px;
+        text-decoration: none;
+        font-weight: bold;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        border-radius: 12px;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+    }
+    .close:hover { background: var(--azul-claro); }
+
+}

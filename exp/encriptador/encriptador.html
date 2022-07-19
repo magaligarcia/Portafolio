@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&family=Montserrat:wght@200;400;700&family=Patrick+Hand&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icono-candado.png">
+    <title> Encriptador de textos </title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-h1">
+            <h1>Encriptador de textos</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="condiciones">
+            <p>⚠️ Solo letras minúsculas, sin acentos ni caracteres especiales </p>
+        </section>
+
+        <section class="contenedor-cuadros-texto">
+            <div class="contenedor-izquierdo">
+                <div class="contenedor-textarea">
+                    <textarea name="" class="cajaTxt" id="textarea" required placeholder="Escribe aquí el texto: " cols="30"
+                        rows="10" ></textarea>
+                </div>
+
+            <div class="contenedor-botones">
+                <button class="botones" id = "encriptar" onclick="botonEncriptar()"  >ENCRIPTAR</button>
+
+                <button class="botones" id = "desencriptar" onclick = "botonDesencriptar()" >DESENCRIPTAR</button>
+            </div>
+                            
+
+            </div>
+            <div class="contenedor-derecho">
+                <div class="contenedor-textarea">
+                    <textarea name="" class="cajaTxt" type="text" id="msg" cols="30" rows="10"></textarea>
+                    
+                </div>
+                <button class="botones boton-copiar" onclick="copiar()">COPIAR</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="datos-creador">
+            <p>Magali Maribel Garcia  </p>
+
+            <a href="https://www.linkedin.com/in/magalimaribelgarcia" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a>
+
+            <a href="https://www.instagram.com/magali___garcia/" target="_blank"> <img src="img/instagram.png" alt=""></a>
+            <a href="https://github.com/magaligarcia?tab=repositories" target="_blank"><img src="img/github.png" alt="github"></a>
+            <p> - Proyecto para Oracle ONE -  </p>
+
+            <a href="#openModal" class="iconoModal"><img src="img/info.png" alt=""> Más info</a>
+
+            <div id="openModal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">X</a>
+                    <h2>Proyecto Oracle ONE</h2>
+                    <br> <p>Esta aplicación se encarga de encriptar textos, para que puedas  intercambiar mensajes secretos con otras personas.<br> <br> Este es el primer desafio de Oracle ONE - Principiante en programación, empleando HTML5, CSS3 y Javascript.  </p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        
+    </footer>
+ 
+    <script src="js/codigo.js"></script>
+
+</body>
+
+</html>

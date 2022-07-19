@@ -180,14 +180,17 @@ color: #DCE1DE;
 }
 
 .desplegable-details{
-    
+    margin: 16px;
 }
 
 .boton{
-    
-    width: 25%;
-    border: 2px solid #216869;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #DCE1DE;
+    border: 2px outset #216869;
     padding: 10px 10px;
-    background: #49A078;
+    background: #1F2421;
     cursor: pointer;
  } 
+
+
+ 

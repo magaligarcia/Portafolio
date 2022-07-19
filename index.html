@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/exp-button.css">
     <title>Magalí García</title>
 </head>
 <body>
@@ -97,7 +98,13 @@
                 </div>
             </div>
             <p  class="subtitulo">SOFT SKILLS</p>
-        </section>
+            <div class="skills">
+                <div class="skills-item">
+                    <img src="/img/soft-skills-scrum.png" alt="Agile Scrum">
+                    <p>Agile Scrum</p>
+                </div>
+            </div>
+            </section>
         
         <section class="formacion">
             <p  class="subtitulo">FORMACIÓN</p>
@@ -179,7 +186,19 @@
 
         <section class="experiencia">
             <p class="subtitulo">EXPERIENCIA</p>
+            <div class="contenedor-experiencias">
+                    <figure class="boton-exp"><img src="/img/experiencia/botones/encriptador2.png" alt="Boton experiencia" />
+                        <figcaption><i class="ion-android-open"></i></figcaption>
+                        <a href="/exp/encriptador/encriptador.html"></a>
+                    </figure>
 
+                    <figure class="boton-exp"><img src="/img/experiencia/botones/ahorcado.png" alt="Boton experiencia" />
+                        <figcaption><i class="ion-android-open"></i></figcaption>
+                        <a href="/exp/ahorcado/ahorcado.html"></a>
+                    </figure>
+            </div>
+
+<!--
                 <details class="desplegable-details">
                     <summary class="boton">Encriptador de Textos</summary>
                     <div class="experiencia-items">
@@ -189,15 +208,17 @@
                         <img class="img-movile" src="/img/experiencia/Encriptador_2.jpeg" alt="Encriptador Movile">
                     </div>
                    </details>
-<!-- 
-                <div class="experiencia-items">
-                    <p>Encriptador de Textos</p>
-                    <p>Vista Desktop:</p>
-                    <img class="img-desktop" src="/img/experiencia/Encriptador_1.jpg" alt="Encriptador Desktop">
-                    <p>Vista Movile:</p>
-                    <img class="img-movile" src="/img/experiencia/Encriptador_2.jpeg" alt="Encriptador Movile">
-                </div>
--->
+
+                   <details class="desplegable-details">
+                    <summary class="boton">Encriptador de Textos</summary>
+                    <div class="experiencia-items">
+                        <p>Vista Desktop:</p>
+                        <img class="img-desktop" src="/img/experiencia/Encriptador_1.jpg" alt="Encriptador Desktop">
+                        <p>Vista Movile:</p>
+                        <img class="img-movile" src="/img/experiencia/Encriptador_2.jpeg" alt="Encriptador Movile">
+                    </div>
+                   </details>
+ -->
             
         </section>
         <section class="contacto">contacto</section>
@@ -206,5 +227,7 @@
     <footer>
 
     </footer>
+
+    <script src="/js/button.js"></script>
 </body>
 </html>

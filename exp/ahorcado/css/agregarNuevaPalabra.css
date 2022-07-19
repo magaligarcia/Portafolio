@@ -1,0 +1,120 @@
+body {
+    background-color: #edf2f4;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.contenedor {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-1 {
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+}
+
+.contenedor-3 {
+    font-family: 'Bungee Hairline', cursive;
+    font-weight: 600;
+    color: #edf2f4;
+    width: 40%;
+    height: 30%;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    background-color: #2b2d42;
+    border-radius: 0.5rem;
+    position: absolute;
+    display: none;
+}
+
+
+.boton, a {
+    margin-top: 2rem;
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    background: #d90429;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-2 {
+    padding-top: 2rem;
+}
+
+.contenedor-2 .boton {
+	margin-top: 1rem;
+}
+
+.adventencia {
+	justify-content: center;
+	margin-top: 0.5rem;
+	color: #2b2d42;
+    font-family: 'Bungee Hairline', cursive;
+    font-weight: 600;
+}
+
+.adventencia :first-child{
+    text-align: center;
+    font-size: 26px;
+}
+
+.adventencia :last-child{
+    text-align: center;
+    font-size: 20px;
+}
+
+#input {
+    background-color: #8d99ae;
+    width: 80%;
+    height: 3rem;
+    padding: 0.2rem 0 0.2rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    color: #2b2d42;
+}
+
+.boton:hover {
+    background-color: #ef233c;
+}
+
+@media screen and (max-width: 480px) {
+    .contenedor {
+        width: 100%;
+    }
+
+    .contenedor h1 {
+        text-align: center;
+    }
+
+    #input {
+        width: 95%;
+    }
+
+    .adventencia {
+        width: 80%;
+    }
+
+    .adventencia p {
+        text-align: center;
+    }
+}

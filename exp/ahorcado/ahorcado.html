@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/ahorcado-movile.css">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="icon" href="img/ahorcado.png">
+    <title>Ahorcado</title>
+</head>
+<body>
+<!---------------------------------  CARGA DE SONIDOS  ---------------------------------->
+    <audio class="audio" id="noose-sound">
+        <source type="audio/mp3" src="sound/chirrido_soga_cut.mp3">
+    </audio>
+
+    <audio class="audio" id="button-sound"> 
+        <source type="audio/mp3" src="sound/button-click.mp3">
+    </audio>
+
+<!---------------------------------  PANTALLA DE INICIO  ---------------------------------->
+    <section id="home-screen">
+    <!---------------------------------  IMAGEN DE HORCA  ---------------------------------->
+        <div id="div-rope">
+            <img class="img-rope" src="img/nudo.png" alt=""> 
+        </div>
+
+        <div id="div-contenedor-titulo-botones">
+            <h1>El ahorcado</h1>
+            <!----------  CAJA DE BOTONES  ---------->
+                <div id="div-buttons">
+                <!----------  TITULO - para que aparezca junto con los botones  ---------->
+        
+                <!----------  BOTON INICIAR JUEGO  ---------->
+                    <div id="div-button-init"> 
+                        <button class="button-pushable" id="iniciar-juego" role="button">
+                        <span class="button-shadow"></span>
+                        <span class="button-edge"></span>
+                        <span class="button-front text">
+                            INICIAR JUEGO
+                            </span>
+                        </button>
+                    </div>
+                <!----------  BOTON AGREGAR NUEVA PALABRA  ---------->
+                    <div id="div-button-new-word"> 
+                        <button class="button-pushable" id="nueva-palabra" role="button" onclick="location.href='/ahorcado/agregarNuevaPalabra.html'">
+                            <span class="button-shadow"></span>
+                            <span class="button-edge"></span>
+                            <span class="button-front text">
+                            AGREGAR NUEVA PALABRA
+                            </span>
+                        </button>
+                    </div> 
+                </div>
+            </section>
+        </div>
+
+
+<!---------------------------------  CARGA DE SCRIPT  ---------------------------------->
+    <script src="/ahorcado/js/start.js"></script>
+</body>
+</html>
+
+
+<!---------------------------------  EjemploDeComentario  ---------------------------------->
+<!----------  EjemploDeComentario  ---------->
