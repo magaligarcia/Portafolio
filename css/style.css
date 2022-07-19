@@ -99,30 +99,95 @@ color: #DCE1DE;
     flex-wrap: wrap;
 }
 
-.skills, .hobbies{
+.skills, .hobbies, .formal{
     padding-top: 2%;
-    padding-bottom: 2%;
+    padding-bottom: 4%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-
-.skills-item{
-    
+.skills-item, .hobbies-item{
+    padding: 28px;
 }
 
-.formacion{
-    color: #DCE1DE;
+.skills-item img, .hobbies-item img{
+    width: 80px;
+    height: 80px;
+}
 
+/*--------------------- FORMACIÓN -------------------------*/
+
+.formacion{
+    padding: 0% 8%;
+    color: #DCE1DE;
 }
 
 .formal{
-    display: flex;
-    padding: 0% 8%;
-    width: 200px;
+   
 }
 
 .formacion-items{
-    margin: 8px;flex-wrap: wrap;
+    border: #9CC5A1 solid 2px;
+    padding: 8px;
+    margin: 8px; 
 }
+
+.formacion-items p{
+    text-align: center;
+    font-family: 'Gruppo', cursive;
+    font-size: 16px;
+}
+
+/*--------------------- EXPERIENCIA -------------------------*/
+
+.experiencia{
+    background-color: #DCE1DE;
+    padding: 0% 8%;
+    font-family: 'Gruppo', cursive;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1F2421;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.experiencia-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experiencia-items :first-child, .experiencia-items :nth-child(3){
+    font-size: 24px;
+    background-color: #9CC5A1;
+    padding: 4px 4% 4px;
+    margin: 10px;
+}
+
+.img-desktop{
+    display: flex;
+    width: 800px; /**/
+    height: 500px;
+    object-fit: cover;  
+}
+
+.img-movile{
+    display: flex;
+    width: 280px; /**/
+    height: 500px;
+    object-fit: cover;  
+}
+
+.desplegable-details{
+    
+}
+
+.boton{
+    
+    width: 25%;
+    border: 2px solid #216869;
+    padding: 10px 10px;
+    background: #49A078;
+    cursor: pointer;
+ } 
