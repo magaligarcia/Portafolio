@@ -5,6 +5,8 @@
     align-items: center;
 }
 
+
+
 .letras-correctas, .letras-incorrectas {
     font-family: 'Bungee Hairline', cursive;
     font-weight: 600;
@@ -50,6 +52,15 @@
     color: #ffffff;
     font-weight: bold;
     cursor: pointer;
+}
+
+
+
+
+.iconos {
+    width: 1rem;
+    color: blue;
+    margin-right: 0.5rem;
 }
 
 .boton:hover {

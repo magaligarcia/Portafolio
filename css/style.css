@@ -14,6 +14,11 @@ main{
     width: 100%;
 }
 
+.imagenes-logo img{
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+}
 
 .menu{
     width: 50%;
@@ -133,12 +138,12 @@ color: #DCE1DE;
     margin: 8px; 
 }
 
-.formacion-items p{
+.formacion-items :nth-child(2){
     text-align: center;
     font-family: 'Gruppo', cursive;
-    font-size: 16px;
+    font-size: 20px;
 }
-
+  
 /*--------------------- EXPERIENCIA -------------------------*/
 
 .experiencia{
@@ -179,18 +184,6 @@ color: #DCE1DE;
     object-fit: cover;  
 }
 
-.desplegable-details{
-    margin: 16px;
-}
-
-.boton{
-    font-family: 'Julius Sans One', sans-serif;
-    color: #DCE1DE;
-    border: 2px outset #216869;
-    padding: 10px 10px;
-    background: #1F2421;
-    cursor: pointer;
- } 
 
 
  
